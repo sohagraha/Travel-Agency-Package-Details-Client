@@ -14,7 +14,7 @@ const Service = (props) => {
             <div class="col-md-7">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">{name}</h5>
-                    <p class="card-text">{desc.slice(0, 100)}</p>
+                    <p class="card-text">{desc?.slice(0, 100)}</p>
                     <div className="d-flex justify-content-around">
                         <p><i class="fas fa-map-marked-alt"></i> {from} <span> </span> <i class="fas fa-exchange-alt"></i>  {to}</p>
                     </div>

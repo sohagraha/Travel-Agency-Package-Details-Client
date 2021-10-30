@@ -7,7 +7,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
     // fetch the data from JSON file 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://stark-badlands-88982.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);

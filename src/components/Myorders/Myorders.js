@@ -11,7 +11,7 @@ const Myorders = () => {
     const [allorders, setAllorders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://stark-badlands-88982.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setAllorders(data.filter(order => order.mail == userEmail)))
     }, [])
@@ -20,7 +20,7 @@ const Myorders = () => {
         console.log(id);
         const proceed = window.confirm('Are you sure, you want to delete order?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://stark-badlands-88982.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -37,9 +37,9 @@ const Myorders = () => {
 
     const handelAcceptOrder = id => {
         console.log(id);
-        const proceed = window.confirm('Are you sure, you want to Accept order?');
+        const proceed = window.confirm('Are you sure, you want to delete order?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://stark-badlands-88982.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
