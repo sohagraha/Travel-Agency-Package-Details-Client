@@ -1,0 +1,10 @@
+.qualities-img{
+    height : 200px;
+    width: 200px;
+    border: 2px solid #283378;
+}
+.about{
+    margin: 30px;
+    border-top: 10px solid white;
+    border: 10px solid black;
+}
