@@ -20,12 +20,15 @@ const Navbar = () => {
                             <Link to="/home" className="nav-link bg active">Home</Link>
                             <Link className="nav-link text-white bg" to="/services">Packages</Link>
 
-                            <Link className="nav-link text-white bg" to="/add-service">Add Package</Link>
-
-                            <Link className="nav-link bg text-white" to="/all-orders">All Orders</Link>
-
-                            <Link className="nav-link bg text-white" to="/my-orders">My Orders</Link>
-
+                            {user.email &&
+                                <Link className="nav-link text-white bg" to="/add-service">Add Package</Link>
+                            }
+                            {user.email &&
+                                <Link className="nav-link bg text-white" to="/all-orders">All Orders</Link>
+                            }
+                            {user.email &&
+                                <Link className="nav-link bg text-white" to="/my-orders">My Orders</Link>
+                            }
                             <Link className="nav-link bg text-white" to="/contact">Contact</Link>
                             <span className="d-flex justify-content-start">
                                 {user?.email ?
