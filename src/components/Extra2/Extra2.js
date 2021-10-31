@@ -14,7 +14,7 @@ const Extra2 = () => {
                             <div className="box">
                                 <p className="description">I love the way you guys are always very helpful and accomodating.I am more than happy to use your organisation for all future holidays.</p>
                             </div>
-                            <div className="author"><img className="rounded-circle" src="https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg" />
+                            <div className="author"><img className="rounded-circle" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d29tZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
                                 <h5 className="name text-white">Sarah Bispham</h5>
                                 <p className="title text-white">CEO of Company Inc.</p>
                             </div>
@@ -33,7 +33,7 @@ const Extra2 = () => {
                             <div className="box">
                                 <p className="description">The best way to do this is to live and work in expensive countries. Better to spend the local currency and save your own money for travel. </p>
                             </div>
-                            <div className="author"><img className="rounded-circle" src="https://image.freepik.com/free-photo/handsome-man-white-shirt-posing-attractive-guy-with-fashion-hairstyle-confident-man-with-short-beard-adult-boy-with-brown-hair-closeup-portrait_186202-8545.jpg" />
+                            <div className="author"><img className="rounded-circle" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
                                 <h5 className="name text-white">Caroline Rowlinson</h5>
                                 <p className="title text-white">Owner of Bongobd Ltd.</p>
                             </div>
@@ -41,6 +41,7 @@ const Extra2 = () => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };

@@ -37,24 +37,6 @@ const Myorders = () => {
         }
     }
 
-    const handelAcceptOrder = id => {
-        const proceed = window.confirm('Are you sure, you want to Accept order?');
-        if (proceed) {
-            const url = `https://stark-badlands-88982.herokuapp.com/orders/${id}`;
-            fetch(url, {
-                method: 'PUT',
-                headers: {
-                    'content-type': 'application/json'
-                },
-            })
-                .then(res => res.json())
-                .then(data => {
-                    alert('Order Accepted');
-                    setAllorders(allorders);
-                });
-        }
-    }
-
     return (
         <div>
             <div className="container pb-5">
@@ -73,7 +55,6 @@ const Myorders = () => {
                     <tbody>
                         {
                             allorders.map(allorders => <Myorder
-                                handelAcceptOrder={handelAcceptOrder}
                                 handelDeleteOrder={handelDeleteOrder}
                                 allorders={allorders} key={allorders._id}></Myorder>)
                         }

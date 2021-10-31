@@ -18,9 +18,9 @@ const Navbar = () => {
                         <div className="navbar-nav">
                             {/* Nav Links  */}
                             <Link to="/home" className="nav-link bg active">Home</Link>
-                            <Link className="nav-link text-white bg" to="/services">Services</Link>
+                            <Link className="nav-link text-white bg" to="/services">Packages</Link>
 
-                            <Link className="nav-link text-white bg" to="/add-service">Add Services</Link>
+                            <Link className="nav-link text-white bg" to="/add-service">Add Package</Link>
 
                             <Link className="nav-link bg text-white" to="/all-orders">All Orders</Link>
 

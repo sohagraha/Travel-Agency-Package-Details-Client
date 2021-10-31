@@ -40,7 +40,7 @@ const Orderform = () => {
                 <br />
 
                 {errors.exampleRequired && <span>This field is required</span>}
-                <input className="bg-danger m-2 Order text-white fw-bild" value="Order" type="submit" />
+                <input className="bg-danger m-2 Order text-white fw-bild p-1" value="Order Now" type="submit" />
             </form>
         </div>
     );

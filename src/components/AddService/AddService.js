@@ -19,7 +19,7 @@ const AddService = () => {
 
     return (
         <div className="border border-dark bgg">
-            <h2 className="fw-bold text-white m-2">Add A new service</h2>
+            <h2 className="fw-bold text-white m-2">Add A New Package</h2>
             <p className="text-warning">Make sure you are a admin*</p>
             <div className="row p-2 m-0">
                 <div className="col-md-6 col-12 mx-auto border border-dark mb-2 bg2">
