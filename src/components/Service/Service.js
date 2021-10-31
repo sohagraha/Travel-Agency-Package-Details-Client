@@ -7,11 +7,11 @@ const Service = (props) => {
     const { name, img, _id, desc, from, to, price } = props.mainservice;
     return (
         // single service 
-        <Col className="d-flex">
-            <div class="col-md-5 h-100">
-                <img src={img} class="img-fluid rounded-start h-100" alt="..." />
+        <Col className="d-flex box h-100">
+            <div class="col-md-5">
+                <img src={img} class="img-fluid rounded-start h-100 service-img py-2" alt="..." />
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 py-2">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">{name}</h5>
                     <p class="card-text">{desc?.slice(0, 100)}</p>

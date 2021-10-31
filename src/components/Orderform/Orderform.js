@@ -16,12 +16,12 @@ const Orderform = () => {
     const onSubmit = formData => {
         const data = { ...formData, "mail": userEmail, "name": userName, "status": "pending" }
 
-        //console.log(data);
+        console.log(data);
 
         axios.post('https://stark-badlands-88982.herokuapp.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
-                    alert("Added Succesfully")
+                    alert("Order Succesfully")
                     reset();
                 }
             })
@@ -35,7 +35,7 @@ const Orderform = () => {
 
                 <br />
 
-                <input className="m-2" placeholder="Mobile Number" type="number" {...register("exampleRequired", { required: true })} />
+                <input className="m-2" placeholder="Mobile Number" type="number" {...register("phone", { required: true })} />
 
                 <br />
 

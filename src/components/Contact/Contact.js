@@ -9,7 +9,7 @@ const Contact = () => {
             <div className=" p-4 row">
                 <div className="col-12 col-md-10 mx-auto pt-3 pb-4 mt-3">
                     <h1 className="bg-secondary text-white">Contact Us</h1>
-                    <div className="card mx-auto mb-5 border-0 bg-dark">
+                    <div className="card mx-auto mb-5 border-0 bg-transparent">
                         <div className="row g-0 p-3">
                             <div className="">
                                 <div className="mb-3 mt-3">

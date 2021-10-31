@@ -10,11 +10,13 @@ const Myorders = () => {
 
     const [allorders, setAllorders] = useState([]);
 
+    // https://stark-badlands-88982.herokuapp.com/
+
     useEffect(() => {
         fetch('https://stark-badlands-88982.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setAllorders(data.filter(order => order.mail == userEmail)))
-    }, [])
+    }, [allorders])
 
     const handelDeleteOrder = id => {
         console.log(id);
@@ -36,20 +38,19 @@ const Myorders = () => {
     }
 
     const handelAcceptOrder = id => {
-        console.log(id);
-        const proceed = window.confirm('Are you sure, you want to delete order?');
+        const proceed = window.confirm('Are you sure, you want to Accept order?');
         if (proceed) {
             const url = `https://stark-badlands-88982.herokuapp.com/orders/${id}`;
             fetch(url, {
-                method: 'DELETE'
+                method: 'PUT',
+                headers: {
+                    'content-type': 'application/json'
+                },
             })
                 .then(res => res.json())
                 .then(data => {
-                    if (data.deletedCount > 0) {
-                        alert('Deleted Successfully.');
-                        const remainingOrders = allorders.filter(order => order._id !== id);
-                        setAllorders(remainingOrders);
-                    }
+                    alert('Order Accepted');
+                    setAllorders(allorders);
                 });
         }
     }
@@ -60,12 +61,12 @@ const Myorders = () => {
                 <h1 className="p-2 fw-bold bg-secondary text-white mt-4">My Orders</h1>
                 {/* Pass the data to another component using map  */}
 
-                <Table striped bordered hover size="sm">
+                <Table striped bordered hover size="sm" responsive>
                     <thead>
                         <tr>
                             <th>Order Id</th>
-                            <th>MAIL</th>
-                            <th>Cost</th>
+                            <th>Mail</th>
+                            <th>Status</th>
                             <th>Action</th>
                         </tr>
                     </thead>

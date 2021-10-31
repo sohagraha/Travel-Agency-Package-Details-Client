@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useForm } from "react-hook-form";
+import "./AddService.css"
 
 const AddService = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -17,10 +18,11 @@ const AddService = () => {
     };
 
     return (
-        <div className="border border-dark bg-secondary">
-            <h2 className="fw-bold text-danger m-2 bg-warning">Add A new service</h2>
+        <div className="border border-dark bgg">
+            <h2 className="fw-bold text-white m-2">Add A new service</h2>
+            <p className="text-warning">Make sure you are a admin*</p>
             <div className="row p-2 m-0">
-                <div className="col-md-6 col-12 mx-auto border border-dark mb-2">
+                <div className="col-md-6 col-12 mx-auto border border-dark mb-2 bg2">
 
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input className="w-100 mt-2 p-2" placeholder="*Service Tittle" {...register("name", { required: true })} />
