@@ -36,7 +36,7 @@ const AddService = () => {
                                     <input className="w-100 mt-2 p-2" placeholder="*From" {...register("from", { required: true })} />
                                 </div>
                                 <div className="col-sm-2 p-0">
-                                    <i class="fas fa-exchange-alt text-white p-3"></i>
+                                    <i className="fas fa-exchange-alt text-white p-3"></i>
                                 </div>
                                 <div className="col-sm-5 p-0">
                                     <input className="w-100 mt-2 p-2" placeholder="*To" {...register("to", { required: true })} />

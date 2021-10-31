@@ -29,7 +29,7 @@ const ServiceDetails = () => {
                         </div>
                     </div>
                     <h3 >Deatils</h3>
-                    <table class="table table-striped table-hover w-75 mx-auto border">
+                    <table className="table table-striped table-hover w-75 mx-auto border">
                         <tbody>
                             <tr>
                                 <th scope="row">From</th>

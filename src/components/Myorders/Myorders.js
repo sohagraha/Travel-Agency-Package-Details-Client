@@ -19,7 +19,6 @@ const Myorders = () => {
     }, [allorders])
 
     const handelDeleteOrder = id => {
-        console.log(id);
         const proceed = window.confirm('Are you sure, you want to delete order?');
         if (proceed) {
             const url = `https://stark-badlands-88982.herokuapp.com/orders/${id}`;

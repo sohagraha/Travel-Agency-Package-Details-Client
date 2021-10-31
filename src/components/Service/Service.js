@@ -8,15 +8,15 @@ const Service = (props) => {
     return (
         // single service 
         <Col className="d-flex box h-100">
-            <div class="col-md-5">
-                <img src={img} class="img-fluid rounded-start h-100 service-img py-2" alt="..." />
+            <div className="col-md-5">
+                <img src={img} className="img-fluid rounded-start h-100 service-img py-2" alt="..." />
             </div>
-            <div class="col-md-7 py-2">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">{name}</h5>
-                    <p class="card-text">{desc?.slice(0, 100)}</p>
+            <div className="col-md-7 py-2">
+                <div className="card-body">
+                    <h5 className="card-title fw-bold">{name}</h5>
+                    <p className="card-text">{desc?.slice(0, 100)}</p>
                     <div className="d-flex justify-content-around">
-                        <p><i class="fas fa-map-marked-alt"></i> {from} <span> </span> <i class="fas fa-exchange-alt"></i>  {to}</p>
+                        <p><i className="fas fa-map-marked-alt"></i> {from} <span> </span> <i className="fas fa-exchange-alt"></i>  {to}</p>
                     </div>
                     <p>Cost : {price} Taka/person</p>
                 </div>

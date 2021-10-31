@@ -8,11 +8,11 @@ const Myorder = (props) => {
                 <td>{_id}</td>
                 <td>{mail}</td>
                 {
-                    (status === "processing") ?
+                    (status === "Approved") ?
                         <td className="fw-bold text-success">{status}</td> :
                         <td className="fw-bold">{status}</td>
                 }
-                <td><button onClick={() => props.handelDeleteOrder(_id)} className="text-danger border-1" ><i class="fas fa-trash-alt"></i></button></td>
+                <td><button onClick={() => props.handelDeleteOrder(_id)} className="text-danger border-1" ><i className="fas fa-trash-alt"></i></button></td>
 
 
             </tr>
