@@ -10,7 +10,7 @@ const Allorders = () => {
         fetch('https://traveliya.projuktibangla.com/orders')
             .then(res => res.json()
                 .then(data => setAllorders(data)))
-    }, [allorders])
+    }, [])
 
     const handelDeleteOrder = id => {
         const proceed = window.confirm('Are you sure, you want to delete order?');
@@ -47,8 +47,12 @@ const Allorders = () => {
         }
     }
     return (
-        <div>
-            <div className="container pb-5">
+        <div style={
+            {
+                height: '80vh',
+            }
+        }> 
+            <div className="container pb-5 h-100">
                 <h1 className="p-2 fw-bold bg-secondary text-white mt-4">All Orders</h1>
                 {/* Pass the data to another component using map  */}
 

@@ -18,7 +18,11 @@ const AddService = () => {
     };
 
     return (
-        <div className="border border-dark bgg">
+        <div className="border border-dark bgg" style={
+            {
+                height: '80vh',
+            }
+        }>
             <h2 className="fw-bold text-white m-2">Add A New Package</h2>
             <p className="text-warning">Make sure you are a admin*</p>
             <div className="row p-2 m-0">
