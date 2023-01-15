@@ -10,10 +10,10 @@ const Myorders = () => {
 
     const [allorders, setAllorders] = useState([]);
 
-    // https://stark-badlands-88982.herokuapp.com/
+    // https://traveliya.projuktibangla.com/
 
     useEffect(() => {
-        fetch('https://stark-badlands-88982.herokuapp.com/orders')
+        fetch('https://traveliya.projuktibangla.com/orders')
             .then(res => res.json())
             .then(data => setAllorders(data.filter(order => order.mail == userEmail)))
     }, [allorders])
@@ -21,7 +21,7 @@ const Myorders = () => {
     const handelDeleteOrder = id => {
         const proceed = window.confirm('Are you sure, you want to delete order?');
         if (proceed) {
-            const url = `https://stark-badlands-88982.herokuapp.com/orders/${id}`;
+            const url = `https://traveliya.projuktibangla.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

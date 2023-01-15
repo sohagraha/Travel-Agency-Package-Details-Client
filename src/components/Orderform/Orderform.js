@@ -16,7 +16,7 @@ const Orderform = () => {
     const onSubmit = formData => {
         const data = { ...formData, "mail": userEmail, "name": userName, "status": "pending" }
 
-        axios.post('https://stark-badlands-88982.herokuapp.com/orders', data)
+        axios.post('https://traveliya.projuktibangla.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Order Succesfully")

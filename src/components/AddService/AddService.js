@@ -8,7 +8,7 @@ const AddService = () => {
 
 
     const onSubmit = data => {
-        axios.post('https://stark-badlands-88982.herokuapp.com/services', data)
+        axios.post('https://traveliya.projuktibangla.com/services', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Added Succesfully")
